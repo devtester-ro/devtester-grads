@@ -6,7 +6,8 @@ Feature: Get Vets for PetClinic
   #  Then response should contain
 
     Examples:
-      | endpoint    | type   | status |
-      | /api/{type} | vets   | 200    |
-      | /api/{type} | owners | 200    |
-      | /api/{type} | pets   | 200    |
+      | endpoint    | type     | status |
+      | /api/{type} | vets     | 200    |
+      | /api/{type} | owners   | 200    |
+      | /api/{type} | pets     | 200    |
+      | /api/{type} | pettypes | 200    |
