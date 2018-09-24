@@ -8,7 +8,7 @@
     <artifactId>restassured-cucumber-grads</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>Endava - Fresh Grads 2018</name>
+    <name>DevTester - Fresh Grads 2018</name>
     <description>Service - Automation - Functional Tests</description>
 
     <properties>

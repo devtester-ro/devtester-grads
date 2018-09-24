@@ -19,7 +19,7 @@ public class TestNGCukesRunner extends AbstractTestNGCucumberTests {
     @BeforeClass
     public  static void setup() {
         ExtentProperties extentProperties = ExtentProperties.INSTANCE;
-        extentProperties.setReportPath("output/endava-grads.html");
+        extentProperties.setReportPath("output/DevTester-grads.html");
     }
 
     @AfterClass

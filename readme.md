@@ -1,4 +1,4 @@
-## Endava - Fresh Grads - Cucumber RestAssured - 2018
+## DevTester - Fresh Grads - Cucumber RestAssured - 2018
 
 #### Project structure
 
@@ -16,7 +16,7 @@ src->resources - xml's for extent / logback / testng
 
 ### RUN Tests from command line
 * Run `mvn clean install`
-    - will produce an `endava-report.html`
+    - will produce an `DevTester-report.html`
     
 ### RUN Tests from IDE
 * RightClick `GetPetclinic.feature` - run
