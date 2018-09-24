@@ -1,7 +1,7 @@
 package com.devtester.cucumber.stepdefinitions.petclinic;
 
-import com.devtester.cucumber.api.ReqRespApi;
-import com.devtester.cucumber.api.RequestApi;
+import com.devtester.cucumber.api.ReqRespMediator;
+import com.devtester.cucumber.api.RequestHandler;
 import com.devtester.cucumber.stepdefinitions.utils.ExceptionHandler;
 import cucumber.api.java.en.Given;
 import org.slf4j.Logger;
@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
 
 import static io.restassured.http.ContentType.JSON;
 
-public class PostStepDefinitions extends ReqRespApi {
+public class PostStepDefinitions extends ReqRespMediator {
 
     private static final Logger logger
             = LoggerFactory.getLogger(PostStepDefinitions.class);
@@ -24,7 +24,8 @@ public class PostStepDefinitions extends ReqRespApi {
 
         Object body = new Object(); //TODO - add actual objects for request
 
-        RequestApi.Builder requestApi = new RequestApi.Builder()
+        RequestHandler.Builder requestApi = new RequestHandler.Builder()
+                .initRequest()
                 .setContentType(JSON)
                 .setPathParams(pathParam)
                 .setBody(body)

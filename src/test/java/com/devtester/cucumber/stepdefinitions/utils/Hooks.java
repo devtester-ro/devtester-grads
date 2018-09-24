@@ -3,7 +3,6 @@ package com.devtester.cucumber.stepdefinitions.utils;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import io.restassured.RestAssured;
-import io.restassured.response.ValidatableResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

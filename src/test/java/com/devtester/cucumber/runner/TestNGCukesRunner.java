@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 import java.io.File;
 
 @CucumberOptions(
-        features = {"src/test/resources/features/petclinic/GetPetclinicVets.feature"},
+        features = {"src/test/resources/features/petclinic/GetPetclinic.feature"},
         glue = {"com.devtester.cucumber.stepdefinitions"},
         plugin = {"com.devtester.cucumber.listener.ExtentCucumberFormatter:"}
 )

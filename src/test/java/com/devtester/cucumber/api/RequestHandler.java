@@ -1,11 +1,12 @@
 package com.devtester.cucumber.api;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 
 import java.util.concurrent.ConcurrentSkipListMap;
 
-public class RequestApi extends ReqRespApi {
+public class RequestHandler extends ReqRespMediator {
 
     public static final class Builder {
 
@@ -41,6 +42,11 @@ public class RequestApi extends ReqRespApi {
 
         public Builder setEndpoint(String endpoint) {
             Builder.endpoint = endpoint;
+            return this;
+        }
+
+        public Builder initRequest() {
+            requestSpecification = RestAssured.given();
             return this;
         }
 
