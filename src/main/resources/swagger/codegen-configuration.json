@@ -1,0 +1,6 @@
+{
+  "invokerPackage": "ro.devtester.petstore",
+  "basePackage": "ro.devtester.petstore",
+  "apiPackage": "ro.devtester.petstore.api",
+  "modelPackage": "ro.devtester.petstore.model"
+}
