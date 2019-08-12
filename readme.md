@@ -19,7 +19,7 @@ src->resources - xml's for extent / logback / testng
     - will produce an `DevTester-report.html`
     
 ### RUN Tests from IDE
-* RightClick `GetPetclinic.feature` - run
+* RightClick `Superhero.feature` - run
     - don't forget to debug your code
 
 ### Changelog
@@ -27,13 +27,14 @@ src->resources - xml's for extent / logback / testng
 #### [0.0.1-SNAPSHOT] - 2018-09-24
 ##### Added
 - Init commit
-- [Functionality] RestAssured GET tests
+- [Functionality] RestAssured GET test
 - [Utils] Properties
 - [Utils] Logback
 - [Utils] ExtentReport
 
 #### [0.0.2-SNAPSHOT] - 2019-08-12
-- [Functionality] Added Swagger
+- [Functionality] Added Swagger for local api
+- [Functionality] RestAssured POST test
 
 
 #### [0.0.3-SNAPSHOT] - 2019-08-13 - TODO

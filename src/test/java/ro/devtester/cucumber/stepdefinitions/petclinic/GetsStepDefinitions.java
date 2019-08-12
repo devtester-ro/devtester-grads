@@ -1,11 +1,11 @@
 package ro.devtester.cucumber.stepdefinitions.petclinic;
 
-import ro.devtester.cucumber.api.ReqRespMediator;
-import ro.devtester.cucumber.api.RequestHandler;
-import ro.devtester.cucumber.stepdefinitions.utils.ExceptionHandler;
 import cucumber.api.java.en.Given;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ro.devtester.cucumber.api.ReqRespMediator;
+import ro.devtester.cucumber.api.RequestHandler;
+import ro.devtester.cucumber.stepdefinitions.utils.ExceptionHandler;
 
 import java.util.concurrent.ConcurrentSkipListMap;
 
@@ -17,10 +17,10 @@ public class GetsStepDefinitions extends ReqRespMediator {
             = LoggerFactory.getLogger(GetsStepDefinitions.class);
 
     @Given("^making a GET request for (.*) to (.*)$")
-    public void aUserRequestsAllVets(String type, String endpoint) {
+    public void aUserRequestsAllVets(String id, String endpoint) {
 
         ConcurrentSkipListMap<String, String> pathParam = new ConcurrentSkipListMap<>();
-        pathParam.put("type", type);
+        pathParam.put("id", id);
 
         RequestHandler.Builder requestApi = new RequestHandler.Builder()
                 .initRequest()

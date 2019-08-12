@@ -1,16 +1,16 @@
 package ro.devtester.cucumber.runner;
 
-import ro.devtester.cucumber.listener.ExtentProperties;
-import ro.devtester.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import ro.devtester.cucumber.listener.ExtentProperties;
+import ro.devtester.cucumber.listener.Reporter;
 
 import java.io.File;
 
 @CucumberOptions(
-        features = {"src/test/resources/features/petclinic/GetPetclinic.feature"},
+        features = {"src/test/resources/features/Superhero.feature"},
         glue = {"ro.devtester.cucumber.stepdefinitions"},
         plugin = {"ro.devtester.cucumber.listener.ExtentCucumberFormatter:"}
 )

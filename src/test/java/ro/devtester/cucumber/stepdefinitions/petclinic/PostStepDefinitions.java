@@ -6,6 +6,7 @@ import ro.devtester.cucumber.stepdefinitions.utils.ExceptionHandler;
 import cucumber.api.java.en.Given;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ro.devtester.model.NewSuperhero;
 
 import java.util.concurrent.ConcurrentSkipListMap;
 
@@ -16,23 +17,23 @@ public class PostStepDefinitions extends ReqRespMediator {
     private static final Logger logger
             = LoggerFactory.getLogger(PostStepDefinitions.class);
 
-    @Given("^making a POST request for (.*) to (.*)$")
-    public void aUserRequestsAllVets(String method, String type, String endpoint) {
+    @Given("^making a POST request")
+    public void aUserMakesPostRequest() {
 
-        ConcurrentSkipListMap<String, String> pathParam = new ConcurrentSkipListMap<>();
-        pathParam.put("type", type);
+        //Create a default superhero
+        NewSuperhero testSuperhero = new NewSuperhero();
+        testSuperhero.setId(132L);
+        testSuperhero.setName("CaptainMarvel");
+        testSuperhero.setTag("TimeTravel");
 
-        Object body = new Object(); //TODO - add actual objects for request
-
+        //Build request
         RequestHandler.Builder requestApi = new RequestHandler.Builder()
                 .initRequest()
                 .setContentType(JSON)
-                .setPathParams(pathParam)
-                .setBody(body)
+                .setBody(testSuperhero)
                 .addContentType()
-                .addPathParamsForApiSpecification()
                 .bodyApiSpecification()
-                .setEndpoint(endpoint);
+                .setEndpoint("/superheroes");
 
         logger.info("Request POST - build successfully");
 
@@ -41,6 +42,5 @@ public class PostStepDefinitions extends ReqRespMediator {
         } catch (Exception e){
             throw new ExceptionHandler("Request POST - did not go as expected: " + e);
         }
-
     }
 }
