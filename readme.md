@@ -32,8 +32,11 @@ src->resources - xml's for extent / logback / testng
 - [Utils] Logback
 - [Utils] ExtentReport
 
-#### [0.0.2-SNAPSHOT] - 2018-10-01
-##### TODO
+#### [0.0.2-SNAPSHOT] - 2019-08-12
+- [Functionality] Added Swagger
+
+
+#### [0.0.3-SNAPSHOT] - 2019-08-13 - TODO
 - [Functionality] RestAssured POST tests
 - [Functionality] Objects and Mappers
 - [Functionality] Asserts
