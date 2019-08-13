@@ -17,7 +17,7 @@ public class GetsStepDefinitions extends ReqRespMediator {
             = LoggerFactory.getLogger(GetsStepDefinitions.class);
 
     @Given("^making a GET request for (.*) to (.*)$")
-    public void aUserRequestsAllVets(String id, String endpoint) {
+    public void aUserRequestsOneSuperhero(String id, String endpoint) {
 
         ConcurrentSkipListMap<String, String> pathParam = new ConcurrentSkipListMap<>();
         pathParam.put("id", id);

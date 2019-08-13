@@ -1,14 +1,12 @@
 package ro.devtester.cucumber.stepdefinitions.petclinic;
 
-import ro.devtester.cucumber.api.ReqRespMediator;
-import ro.devtester.cucumber.api.RequestHandler;
-import ro.devtester.cucumber.stepdefinitions.utils.ExceptionHandler;
 import cucumber.api.java.en.Given;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ro.devtester.cucumber.api.ReqRespMediator;
+import ro.devtester.cucumber.api.RequestHandler;
+import ro.devtester.cucumber.stepdefinitions.utils.ExceptionHandler;
 import ro.devtester.model.NewSuperhero;
-
-import java.util.concurrent.ConcurrentSkipListMap;
 
 import static io.restassured.http.ContentType.JSON;
 
@@ -39,7 +37,7 @@ public class PostStepDefinitions extends ReqRespMediator {
 
         try {
             validatableResponse = requestApi.whenPostRequestResponse();
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new ExceptionHandler("Request POST - did not go as expected: " + e);
         }
     }
