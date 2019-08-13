@@ -1,7 +1,7 @@
 node {
     def mvnHome
     stage('Preparation') {
-        // Get some code from a GitHub repository
+        // Get some grads code from a GitHub repository
         git 'https://github.com/devtester-ro/devtester-grads.git'
         // Get the Maven tool.
         // ** NOTE: This 'M3' Maven tool must be configured
