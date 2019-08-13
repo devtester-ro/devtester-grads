@@ -37,7 +37,5 @@ src->resources - xml's for extent / logback / testng
 - [Functionality] RestAssured POST test
 
 
-#### [0.0.3-SNAPSHOT] - 2019-08-13 - TODO
-- [Functionality] RestAssured POST tests
-- [Functionality] Objects and Mappers
-- [Functionality] Asserts
+#### [0.0.3-SNAPSHOT] - 2019-08-13
+- [Functionality] Pipeline
