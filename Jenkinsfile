@@ -25,9 +25,9 @@ node {
     stage('Run Automation') {
         try {
             sh "'${mvnHome}/bin/mvn' test"
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "\\output\\", reportFiles: 'reports.html', reportName: 'HTML Test Report', reportTitles: ''])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "\\output\\", reportFiles: 'DevTester-grads.html', reportName: 'HTML Test Report', reportTitles: ''])
         } catch (all) {
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "\\output\\", reportFiles: 'reports.html', reportName: 'HTML Test Report', reportTitles: ''])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "\\output\\", reportFiles: 'DevTester-grads.html', reportName: 'HTML Test Report', reportTitles: ''])
         }
     }
 }
