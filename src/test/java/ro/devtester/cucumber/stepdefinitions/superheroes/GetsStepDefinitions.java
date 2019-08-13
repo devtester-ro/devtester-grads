@@ -1,4 +1,4 @@
-package ro.devtester.cucumber.stepdefinitions.petclinic;
+package ro.devtester.cucumber.stepdefinitions.superheroes;
 
 import cucumber.api.java.en.Given;
 import org.slf4j.Logger;
