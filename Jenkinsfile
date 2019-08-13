@@ -8,13 +8,23 @@ node {
         // **       in the global configuration.
         mvnHome = tool 'M3'
 
+        // Get the JDK also for building Java Apps
         env.JAVA_HOME="${tool 'jdk-8'}"
         env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
 
     }
     stage('Build') {
-        sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+        sh "'${mvnHome}/bin/mvn' clean install -DskipTests"
     }
+
+    stage('Run Application') {
+        sh "'${mvnHome}/bin/mvn' spring-boot:run &"
+    }
+
+    stage('Run Automation') {
+        sh "'${mvnHome}/bin/mvn' test"
+    }
+
     stage('Results') {
         junit '**/target/surefire-reports/TEST-*.xml'
         archive 'target/*.jar'
