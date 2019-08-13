@@ -19,6 +19,7 @@ node {
 
     stage('Run Application') {
         sh "'${mvnHome}/bin/mvn' spring-boot:run &"
+        sleep(10000)
     }
 
     stage('Run Automation') {
