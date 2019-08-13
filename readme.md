@@ -1,4 +1,4 @@
-## DevTester - Fresh Grads - Cucumber RestAssured - 2018
+## DevTester - Grads - Cucumber RestAssured - 2019.8
 
 #### Project structure
 
