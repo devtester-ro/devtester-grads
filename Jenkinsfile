@@ -7,6 +7,10 @@ node {
         // ** NOTE: This 'M3' Maven tool must be configured
         // **       in the global configuration.
         mvnHome = tool 'M3'
+
+        env.JAVA_HOME="${tool 'jdk-8'}"
+        env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
+
     }
     stage('Build') {
         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
