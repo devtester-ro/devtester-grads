@@ -1,6 +1,6 @@
 ## DevTester - Grads - Cucumber RestAssured - 2019.8
 
-#### Project structure
+#### Project structure - test
 
 ````
 output->extent report html file
