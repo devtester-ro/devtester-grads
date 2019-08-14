@@ -14,13 +14,14 @@ src->resources - properties - properties files
 src->resources - xml's for extent / logback / testng
 ````
 
-### RUN Tests from command line
-* Run `mvn clean install`
-    - will produce an `DevTester-report.html`
+### Build App and Run it from command line
+* Run `mvn clean install -DskipTests`
+* Run `mvn spring-boot:run`
     
 ### RUN Tests from IDE
 * RightClick `Superhero.feature` - run
     - don't forget to debug your code
+    - will produce an `DevTester-report.html`
 
 ### Changelog
 
