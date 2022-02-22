@@ -1,0 +1,2 @@
+- For this example we will take - https://www.endava.com/sitemap.xml
+- For pojo convenience - http://pojo.sodhanalibrary.com/

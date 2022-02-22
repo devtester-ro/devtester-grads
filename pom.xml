@@ -24,7 +24,7 @@
         <jackson.version>2.9.8</jackson.version>
         <junit.version>4.12</junit.version>
         <extent.report.version>3.1.5</extent.report.version>
-        <rest.assured.version>3.0.0</rest.assured.version>
+        <rest.assured.version>3.3.0</rest.assured.version>
         <gson.version>2.8.5</gson.version>
         <apache.commons.version>1.3</apache.commons.version>
     </properties>
@@ -164,6 +164,18 @@
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jdk8</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.3.4</version>
         </dependency>
 
     </dependencies>
