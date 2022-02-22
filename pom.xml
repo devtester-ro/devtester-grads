@@ -21,7 +21,7 @@
         <org.springframework.boot.version>2.1.5.RELEASE</org.springframework.boot.version>
         <slf4j.version>1.7.25</slf4j.version>
         <springfox.version>2.7.0</springfox.version>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.12.1</jackson.version>
         <junit.version>4.12</junit.version>
         <extent.report.version>3.1.5</extent.report.version>
         <rest.assured.version>3.3.0</rest.assured.version>
